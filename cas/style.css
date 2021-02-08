@@ -1,0 +1,15 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+#div1{
+  width: 100vw;
+  height: 100vh;
+  background-color: #212121
+;
+}
+#div2{
+  width: 100vw;
+  height: 20vh;
+  background-color: #000000;
+}
