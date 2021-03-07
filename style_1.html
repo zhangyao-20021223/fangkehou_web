@@ -1,0 +1,705 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>抽屉式菜单</title>
+<script type="text/javascript">
+ function setturns(i){
+  selectturns(i);
+ }
+ function selectturns(i){
+  switch(i){
+   case 1:
+   document.getElementById("t2").className="this";
+   document.getElementById("t3").className="this2";
+   document.getElementById("t4").className="bg02";
+   document.getElementById("t5").className="bg02";
+   document.getElementById("t6").className="bg02";
+   document.getElementById("t7").className="bg02";
+   document.getElementById("t8").className="bg02";
+   document.getElementById("p1").style.display="block";
+   document.getElementById("p2").style.display="none";
+   document.getElementById("p3").style.display="none";
+   document.getElementById("p4").style.display="none";
+   document.getElementById("p5").style.display="none"; 
+   document.getElementById("p6").style.display="none";
+   break;
+   case 2:
+   document.getElementById("t2").className="bg02";
+   document.getElementById("t3").className="this";
+   document.getElementById("t4").className="this2";
+   document.getElementById("t5").className="bg02";
+   document.getElementById("t6").className="bg02";
+   document.getElementById("t7").className="bg02"; 
+   document.getElementById("t8").className="bg02";
+  document.getElementById("p1").style.display="none";
+   document.getElementById("p2").style.display="block";
+   document.getElementById("p3").style.display="none";
+   document.getElementById("p4").style.display="none";
+   document.getElementById("p5").style.display="none";
+   document.getElementById("p6").style.display="none";
+   break;
+   case 3:
+   document.getElementById("t2").className="bg02";
+   document.getElementById("t3").className="bg02";
+   document.getElementById("t4").className="this";
+   document.getElementById("t5").className="this2";
+   document.getElementById("t6").className="bg02";
+   document.getElementById("t7").className="bg02";
+   document.getElementById("t8").className="bg02";
+   document.getElementById("p1").style.display="none";
+   document.getElementById("p2").style.display="none";
+   document.getElementById("p3").style.display="block";
+   document.getElementById("p4").style.display="none";
+   document.getElementById("p5").style.display="none";
+   document.getElementById("p6").style.display="none";
+   break;
+   case 4:
+   document.getElementById("t2").className="bg02";
+   document.getElementById("t3").className="bg02";
+   document.getElementById("t4").className="bg02";
+   document.getElementById("t5").className="this";
+   document.getElementById("t6").className="this2";
+   document.getElementById("t7").className="bg02";
+   document.getElementById("t8").className="bg02";
+   document.getElementById("p1").style.display="none";
+   document.getElementById("p2").style.display="none";
+   document.getElementById("p3").style.display="none";
+   document.getElementById("p4").style.display="block";
+   document.getElementById("p5").style.display="none";
+   document.getElementById("p6").style.display="none";
+   break;
+   case 5:
+   document.getElementById("t2").className="bg02";
+   document.getElementById("t3").className="bg02";
+   document.getElementById("t4").className="bg02";
+   document.getElementById("t5").className="bg02";
+   document.getElementById("t6").className="this";
+   document.getElementById("t7").className="this2";
+   document.getElementById("t8").className="bg02";
+  document.getElementById("p1").style.display="none";
+   document.getElementById("p2").style.display="none";
+   document.getElementById("p3").style.display="none";
+   document.getElementById("p4").style.display="none";
+   document.getElementById("p5").style.display="block";
+   document.getElementById("p6").style.display="none";
+    break;
+   case 6:
+   document.getElementById("t2").className="bg02";
+   document.getElementById("t3").className="bg02";
+   document.getElementById("t4").className="bg02";
+   document.getElementById("t5").className="bg02";
+   document.getElementById("t6").className="bg02";
+   document.getElementById("t7").className="this";
+   document.getElementById("t8").className="this2";
+  document.getElementById("p1").style.display="none";
+   document.getElementById("p2").style.display="none";
+   document.getElementById("p3").style.display="none";
+   document.getElementById("p4").style.display="none";
+   document.getElementById("p5").style.display="none";
+   document.getElementById("p6").style.display="block";
+  }
+ }
+function setturns2(i){
+  selectturns2(i);
+ }
+ function selectturns2(i){
+  switch(i){
+   case 1:
+   document.getElementById("b1").className="on";
+   document.getElementById("b2").className="";
+   document.getElementById("b3").className="";
+   document.getElementById("b4").className="";
+   document.getElementById("b5").className="";
+   document.getElementById("s1").style.display="block";
+   document.getElementById("s2").style.display="none";
+   document.getElementById("s3").style.display="none";
+   document.getElementById("s4").style.display="none";
+   document.getElementById("s5").style.display="none";
+   break;
+   case 2:
+   document.getElementById("b1").className="";
+   document.getElementById("b2").className="on";
+   document.getElementById("b3").className="";
+   document.getElementById("b4").className="";
+   document.getElementById("b5").className="";
+   document.getElementById("s1").style.display="none";
+   document.getElementById("s2").style.display="block";
+   document.getElementById("s3").style.display="none";
+   document.getElementById("s4").style.display="none";
+   document.getElementById("s5").style.display="none";
+   break;
+   case 3:
+   document.getElementById("b1").className="";
+   document.getElementById("b2").className="";
+   document.getElementById("b3").className="on";
+   document.getElementById("b4").className="";
+   document.getElementById("b5").className="";
+   document.getElementById("s1").style.display="none";
+   document.getElementById("s2").style.display="none";
+   document.getElementById("s3").style.display="block";
+   document.getElementById("s4").style.display="none";
+   document.getElementById("s5").style.display="none";
+   break;
+   case 4:
+   document.getElementById("b1").className="";
+   document.getElementById("b2").className="";
+   document.getElementById("b3").className="";
+   document.getElementById("b4").className="on";
+   document.getElementById("b5").className="";
+   document.getElementById("s1").style.display="none";
+   document.getElementById("s2").style.display="none";
+   document.getElementById("s3").style.display="none";
+   document.getElementById("s4").style.display="block";
+   document.getElementById("s5").style.display="none";
+   break;
+   case 5:
+   document.getElementById("b1").className="";
+   document.getElementById("b2").className="";
+   document.getElementById("b3").className="";
+   document.getElementById("b4").className="";
+   document.getElementById("b5").className="on";
+   document.getElementById("s1").style.display="none";
+   document.getElementById("s2").style.display="none";
+   document.getElementById("s3").style.display="none";
+   document.getElementById("s4").style.display="none";
+   document.getElementById("s5").style.display="block";
+  }
+ }
+function setturns3(i){
+  selectturns3(i);
+ }
+ function selectturns3(i){
+  switch(i){
+   case 1: 
+   document.getElementById("t2").className="this";
+   document.getElementById("t3").className="this2";
+  document.getElementById("p1").style.display="block";
+   document.getElementById("s1").style.display="block";
+   document.getElementById("s2").style.display="none";
+   document.getElementById("s3").style.display="none";
+   document.getElementById("s4").style.display="none";  
+   document.getElementById("s5").style.display="none";
+   break;
+   case 2:
+  document.getElementById("t2").className="this";
+   document.getElementById("t3").className="this2";
+  document.getElementById("p1").style.display="block";
+   document.getElementById("s1").style.display="none";
+   document.getElementById("s2").style.display="block";
+   document.getElementById("s3").style.display="none";
+   document.getElementById("s4").style.display="none";
+   document.getElementById("s5").style.display="none";
+   break;
+   case 3: 
+   document.getElementById("t2").className="this";
+   document.getElementById("t3").className="this2";
+  document.getElementById("p1").style.display="block";
+   document.getElementById("s1").style.display="none";
+   document.getElementById("s2").style.display="none";
+   document.getElementById("s3").style.display="block";
+   document.getElementById("s4").style.display="none";
+   document.getElementById("s5").style.display="none";
+   break;
+   case 4:
+   document.getElementById("t2").className="this";
+   document.getElementById("t3").className="this2";
+  document.getElementById("p1").style.display="block";
+   document.getElementById("s1").style.display="none";
+   document.getElementById("s2").style.display="none";
+   document.getElementById("s3").style.display="none";
+   document.getElementById("s4").style.display="block";
+   document.getElementById("s5").style.display="none";
+   break;
+   case 5:
+   document.getElementById("t2").className="this";
+   document.getElementById("t3").className="this2";
+  document.getElementById("p1").style.display="block";
+   document.getElementById("s1").style.display="none";
+   document.getElementById("s2").style.display="none";
+   document.getElementById("s3").style.display="none";
+   document.getElementById("s4").style.display="none";
+   document.getElementById("s5").style.display="block";
+  }
+ }
+ function setturns4(i){
+  selectturns4(i);
+ }
+ function selectturns4(i){
+  switch(i){
+   case 1:
+   document.getElementById("z1").className="on";
+   document.getElementById("z2").className="";
+   document.getElementById("z3").className="";
+   document.getElementById("z4").className="";
+   document.getElementById("z5").className="";
+   document.getElementById("z6").className="";
+   document.getElementById("z7").className="";
+   document.getElementById("w1").style.display="block";
+   document.getElementById("w2").style.display="none";
+   document.getElementById("w3").style.display="none";
+   document.getElementById("w4").style.display="none";
+   document.getElementById("w5").style.display="none";
+   document.getElementById("w6").style.display="none";
+   document.getElementById("w7").style.display="none";
+   break;
+   case 2:
+   document.getElementById("z1").className="";
+   document.getElementById("z2").className="on";
+   document.getElementById("z3").className="";
+   document.getElementById("z4").className="";
+   document.getElementById("z5").className="";
+   document.getElementById("z6").className="";
+   document.getElementById("z7").className="";
+   document.getElementById("w1").style.display="none";
+   document.getElementById("w2").style.display="block";
+   document.getElementById("w3").style.display="none";
+   document.getElementById("w4").style.display="none";
+   document.getElementById("w5").style.display="none";
+   document.getElementById("w6").style.display="none";
+   document.getElementById("w7").style.display="none";
+   break;
+   case 3:
+   document.getElementById("z1").className="";
+   document.getElementById("z2").className="";
+   document.getElementById("z3").className="on";
+   document.getElementById("z4").className="";
+   document.getElementById("z5").className="";
+   document.getElementById("z6").className="";
+   document.getElementById("z7").className="";
+   document.getElementById("w1").style.display="none";
+   document.getElementById("w2").style.display="none";
+   document.getElementById("w3").style.display="block";
+   document.getElementById("w4").style.display="none";
+   document.getElementById("w5").style.display="none";
+   document.getElementById("w6").style.display="none";
+   document.getElementById("w7").style.display="none";
+   break;
+   case 4:
+   document.getElementById("z1").className="";
+   document.getElementById("z2").className="";
+   document.getElementById("z3").className="";
+   document.getElementById("z4").className="on";
+   document.getElementById("z5").className="";
+   document.getElementById("z6").className="";
+   document.getElementById("z7").className="";
+   document.getElementById("w1").style.display="none";
+   document.getElementById("w2").style.display="none";
+   document.getElementById("w3").style.display="none";
+   document.getElementById("w4").style.display="block";
+   document.getElementById("w5").style.display="none";
+   document.getElementById("w6").style.display="none";
+   document.getElementById("w7").style.display="none";
+   break;
+   case 5:
+   document.getElementById("z1").className="";
+   document.getElementById("z2").className="";
+   document.getElementById("z3").className="";
+   document.getElementById("z4").className="";
+   document.getElementById("z5").className="on";
+   document.getElementById("z6").className="";
+   document.getElementById("z7").className="";
+   document.getElementById("w1").style.display="none";
+   document.getElementById("w2").style.display="none";
+   document.getElementById("w3").style.display="none";
+   document.getElementById("w4").style.display="none";
+   document.getElementById("w5").style.display="block";
+   document.getElementById("w6").style.display="none";
+   document.getElementById("w7").style.display="none";
+   break;
+   case 6:
+   document.getElementById("z1").className="";
+   document.getElementById("z2").className="";
+   document.getElementById("z3").className="";
+   document.getElementById("z4").className="";
+   document.getElementById("z5").className="";
+   document.getElementById("z6").className="on";
+   document.getElementById("z7").className="";
+   document.getElementById("w1").style.display="none";
+   document.getElementById("w2").style.display="none";
+   document.getElementById("w3").style.display="none";
+   document.getElementById("w4").style.display="none";
+   document.getElementById("w5").style.display="none";
+   document.getElementById("w6").style.display="block";
+   document.getElementById("w7").style.display="none";
+   break;
+   case 7:
+   document.getElementById("z1").className="";
+   document.getElementById("z2").className="";
+   document.getElementById("z3").className="";
+   document.getElementById("z4").className="";
+   document.getElementById("z5").className="";
+   document.getElementById("z6").className="";
+   document.getElementById("z7").className="on";
+   document.getElementById("w1").style.display="none";
+   document.getElementById("w2").style.display="none";
+   document.getElementById("w3").style.display="none";
+   document.getElementById("w4").style.display="none";
+   document.getElementById("w5").style.display="none";
+   document.getElementById("w6").style.display="none";
+   document.getElementById("w7").style.display="block";
+  }
+ }
+ function setturns5(i){
+  selectturns5(i);
+ }
+ function selectturns5(i){
+  switch(i){
+   case 1:
+   document.getElementById("t5").className="this";
+   document.getElementById("t6").className="this2";
+  document.getElementById("p4").style.display="block";
+   document.getElementById("w1").style.display="block";
+   document.getElementById("w2").style.display="none";
+   document.getElementById("w3").style.display="none";
+   document.getElementById("w4").style.display="none";
+   document.getElementById("w5").style.display="none";
+   document.getElementById("w6").style.display="none";
+   document.getElementById("w7").style.display="none";
+   break;
+   case 2:
+   document.getElementById("t5").className="this";
+   document.getElementById("t6").className="this2";
+  document.getElementById("p4").style.display="block";
+   document.getElementById("w1").style.display="none";
+   document.getElementById("w2").style.display="block";
+   document.getElementById("w3").style.display="none";
+   document.getElementById("w4").style.display="none";
+   document.getElementById("w5").style.display="none";
+   document.getElementById("w6").style.display="none";
+   document.getElementById("w7").style.display="none";
+   break;
+   case 3:
+   document.getElementById("t5").className="this";
+   document.getElementById("t6").className="this2";
+  document.getElementById("p4").style.display="block";
+   document.getElementById("w1").style.display="none";
+   document.getElementById("w2").style.display="none";
+   document.getElementById("w3").style.display="block";
+   document.getElementById("w4").style.display="none";
+   document.getElementById("w5").style.display="none";
+   document.getElementById("w6").style.display="none";
+   document.getElementById("w7").style.display="none";
+   break;
+   case 4:
+   document.getElementById("t5").className="this";
+   document.getElementById("t6").className="this2";
+  document.getElementById("p4").style.display="block";
+   document.getElementById("w1").style.display="none";
+   document.getElementById("w2").style.display="none";
+   document.getElementById("w3").style.display="none";
+   document.getElementById("w4").style.display="block";
+   document.getElementById("w5").style.display="none";
+   document.getElementById("w6").style.display="none";
+   document.getElementById("w7").style.display="none";
+   break;
+   case 5:
+   document.getElementById("t5").className="this";
+   document.getElementById("t6").className="this2";
+  document.getElementById("p4").style.display="block";
+   document.getElementById("w1").style.display="none";
+   document.getElementById("w2").style.display="none";
+   document.getElementById("w3").style.display="none";
+   document.getElementById("w4").style.display="none";
+   document.getElementById("w5").style.display="block";
+   document.getElementById("w6").style.display="none";
+   document.getElementById("w7").style.display="none";
+   break;
+   case 6:
+   document.getElementById("t5").className="this";
+   document.getElementById("t6").className="this2";
+  document.getElementById("p4").style.display="block";
+   document.getElementById("w1").style.display="none";
+   document.getElementById("w2").style.display="none";
+   document.getElementById("w3").style.display="none";
+   document.getElementById("w4").style.display="none";
+   document.getElementById("w5").style.display="none";
+   document.getElementById("w6").style.display="block";
+   document.getElementById("w7").style.display="none";
+   //download by //www.jb51.net
+   break;
+   case 7:
+   document.getElementById("t5").className="this";
+   document.getElementById("t6").className="this2";
+  document.getElementById("p4").style.display="block";
+   document.getElementById("w1").style.display="none";
+   document.getElementById("w2").style.display="none";
+   document.getElementById("w3").style.display="none";
+   document.getElementById("w4").style.display="none";
+   document.getElementById("w5").style.display="none";
+   document.getElementById("w6").style.display="none";
+   document.getElementById("w7").style.display="block";
+  }
+ }
+function setturnsout(i){
+  selectturnsout(i);
+ }
+ function selectturnsout(i){
+  switch(i){
+   case 1:
+   document.getElementById("t2").className="bg02";
+   document.getElementById("t3").className="bg02";
+   document.getElementById("t4").className="bg02";
+   document.getElementById("t5").className="bg02";
+   document.getElementById("t6").className="bg02";
+   document.getElementById("t7").className="bg02";
+   document.getElementById("t8").className="bg02";
+   document.getElementById("p1").style.display="none";
+   document.getElementById("p2").style.display="none";
+   document.getElementById("p3").style.display="none";
+   document.getElementById("p4").style.display="none";
+   document.getElementById("p5").style.display="none";
+   document.getElementById("p6").style.display="none";
+   document.getElementById("s1").style.display="none";
+   document.getElementById("s2").style.display="none";
+   document.getElementById("s3").style.display="none";
+   document.getElementById("s4").style.display="none";
+   document.getElementById("s5").style.display="none";
+   document.getElementById("w1").style.display="none";
+   document.getElementById("w2").style.display="none";
+   document.getElementById("w3").style.display="none";
+   document.getElementById("w4").style.display="none";
+   document.getElementById("w5").style.display="none";
+   document.getElementById("w6").style.display="none";
+   document.getElementById("w7").style.display="none";   
+  }
+ }
+</script>
+<style type="text/css"> 
+body{ margin:0; padding:0; background:url(images/search_bg.gif) repeat-x; font-size:12px;}
+ul,li{ margin:0; padding:0; list-style:none;}
+ .link_box{ width:240px; background:url(images/search_bg.gif) repeat-x; padding-bottom:20px; height:295px;}
+.link_box .prdct{ width:234px; margin-top:15px; float:right; position:relative;}
+.link_box .prdct p{ position:absolute; background:url(images/cpzg.gif) repeat-y; height:32px; line-height:30px; width:234px;}
+.link_box .prdct p a{ display:block; height:32px; width:190px; padding-right:44px; text-align:right;color:#004FA3; text-decoration:none; cursor:pointer;}
+.link_box .prdct p a:hover{ text-decoration:none; color:#C40000;}
+.link_box .prdct p.bg01{ background-position:0 0px;}
+.link_box .prdct p.bg02{ background-position:0 -32px; }
+.link_box .prdct p.bg07{background-position:0 -212px; }
+.link_box .prdct p.this{ background-position:0 -61px; width:250px;}
+.link_box .prdct p.this2{background-position:0 -91px; width:250px;}
+.link_box .prdct p.this2 a{ margin-left:15px; color:#C40000; text-decoration:none;}
+#t1{ top:0;}
+#t2{top:32px;}
+#t3{top:64px;}
+#t4{top:96px;}
+#t5{top:128px;}
+#t6{top:160px;}
+#t7{top:192px;}
+#t8{top:224px;}
+#t9{top:256px;}
+.prdct .p_son{ width:200px; background:#F1F1F1;border:1px solid #cbcbcb; border-bottom:none; position:absolute; left:250px;display:none; }
+.p_son li,.s_son li{ height:30px; line-height:30px; border:1px solid #fff; border-bottom:#cbcbcb; text-align:left; }
+.p_son li a,.s_son li a{ color:#004FA3; text-decoration:none; display:block; width:188px; cursor:pointer; height:30px; padding-left:10px; overflow:hidden; white-space:nowrap;text-overflow:ellipsis;}
+.p_son li a:visited,.s_son li a:visited{color:#004FA3;}
+.p_son li a:hover,.s_son li a:hover{ color:#C40000; text-decoration:underline; background:#ddd;}
+.p_son li a.jt{ background:url(images/001_14.gif) no-repeat 180px 50%; }
+.p_son li a.jt:hover{ background:url(images/001_14.gif) no-repeat 180px 50% #ddd;}
+.p_son li.on{background:url(images/001_14.gif) no-repeat 180px 50% #ddd;}
+.p_son li.on a{color:#C40000; text-decoration:underline;}
+#p1,#s1{top:36px;}
+#p2,#s2{top:68px;}
+#p3,#s3{top:100px;}
+#p4,#s4{top:132px;}
+#s5{ top:164px;}
+#w1{ top:131px;}
+#w2{ top:162px;}
+#w3{ top:196px;}
+#w4{ top:228px;}
+#w5{ top:260px;}
+#w6{ top:292px;}
+#w7{ top:324px;}
+#p5{top:164px;}
+#p6{ top:196px;}
+.prdct .s_son{left:450px;}
+</style>
+</head>
+<body>
+<div class="link_box">
+<div class="prdct">
+<p class="bg01" id="t1"></p>
+<p class="bg02" id="t2"></p>
+<p class="bg02" id="t3" onmouseover="setturns(1)" onmouseout="setturnsout(1)"><a href="#">表面活性剂系列</a></p>
+<p class="bg02" id="t4" onmouseover="setturns(2)" onmouseout="setturnsout(1)"><a href="#">螯合剂系列</a></p>
+<p class="bg02" id="t5" onmouseover="setturns(3)" onmouseout="setturnsout(1)"><a href="#">增粘乳液系列</a></p>
+<p class="bg02" id="t6" onmouseover="setturns(4)" onmouseout="setturnsout(1)"><a href="#">造纸化学品系列</a></p>
+<p class="bg02" id="t7" onmouseover="setturns(5)" onmouseout="setturnsout(1)"><a href="#">印刷化学品系列</a></p>
+<p class="bg02" id="t8" onmouseover="setturns(6)" onmouseout="setturnsout(1)"><a href="#">代理产品</a></p>
+<p class="bg07" id="t9"></p>
+<div class="p_son" id="p1" onmouseover="setturns(1)" onmouseout="setturnsout(1)">
+<ul>
+<li id="b1" onmouseover="setturns2(1)" onmouseout="setturnsout(1)"><a href="#" class="jt">功能性表面活性剂</a></li>
+<li id="b2" onmouseover="setturns2(2)" onmouseout="setturnsout(1)"><a href="#" class="jt">阳离子表面活性剂</a></li>
+<li id="b3" onmouseover="setturns2(3)" onmouseout="setturnsout(1)"><a href="#" class="jt">非离子表面活性剂</a></li>
+<li id="b4" onmouseover="setturns2(4)" onmouseout="setturnsout(1)"><a href="#" class="jt">阴离子表面活性剂</a></li>
+<li id="b5" onmouseover="setturns2(5)" onmouseout="setturnsout(1)"><a href="#" class="jt">两性表面活性剂</a></li>
+</ul>
+</div>
+<div class="p_son" id="p2" onmouseover="setturns(2)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">DXP-1020胶粘剂专用消泡剂</a></li>
+<li><a href="#">DXP-007消泡剂</a></li> 
+<li><a href="#">DXP-007消泡剂</a></li> 
+<li><a href="#">DXP-007消泡剂</a></li> 
+</ul>
+</div>
+<div class="p_son" id="p3" onmouseover="setturns(3)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">施胶剂 </a></li>
+<li><a href="#">氧漂稳定剂系列</a></li> 
+<li><a href="#">蒸煮助剂</a></li> 
+<li><a href="#">脱墨剂</a></li> 
+<li><a href="#">消泡剂</a></li> 
+<li><a href="#">施胶剂 </a></li>
+</ul>
+</div>
+<div class="p_son" id="p4" onmouseover="setturns(4)" onmouseout="setturnsout(1)">
+<ul>
+<li id="z1" onmouseover="setturns4(1)" onmouseout="setturnsout(1)"><a href="#" class="jt">螯合剂 </a></li>
+<li id="z2" onmouseover="setturns4(2)" onmouseout="setturnsout(1)"><a href="#" class="jt">乳化剂</a></li> 
+<li id="z3" onmouseover="setturns4(3)" onmouseout="setturnsout(1)"><a href="#" class="jt">施胶剂</a></li> 
+<li id="z4" onmouseover="setturns4(4)" onmouseout="setturnsout(1)"><a href="#" class="jt">脱墨剂</a></li> 
+<li id="z5" onmouseover="setturns4(5)" onmouseout="setturnsout(1)"><a href="#" class="jt">显白剂</a></li> 
+<li id="z6" onmouseover="setturns4(6)" onmouseout="setturnsout(1)"><a href="#" class="jt">消泡剂 </a></li>
+<li id="z7" onmouseover="setturns4(7)" onmouseout="setturnsout(1)"><a href="#" class="jt">蒸煮助剂</a></li> 
+</ul>
+</div>
+<div class="p_son" id="p5" onmouseover="setturns(5)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">施胶剂 </a></li>
+<li><a href="#">氧漂稳定剂系列</a></li> 
+<li><a href="#">蒸煮助剂</a></li> 
+<li><a href="#">脱墨剂</a></li> 
+<li><a href="#">消泡剂</a></li> 
+<li><a href="#">施胶剂 </a></li>
+<li><a href="#">氧漂稳定剂系列</a></li> 
+</ul>
+</div>
+<div class="p_son" id="p6" onmouseover="setturns(6)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">罗迪亚造纸脱墨剂 </a></li>
+<li><a href="#">DTPA二乙烯三胺五乙酸 </a></li> 
+<li><a href="#">二乙烯三胺五乙酸五钠DTPA-Na5 </a></li> 
+<li><a href="#">乙二胺四乙酸EDTA </a></li> 
+<li><a href="#">乙二胺四乙酸四钠EDTA-Na4 </a></li> 
+<li><a href="#">乙二胺四乙酸二钠盐 </a></li>
+<li><a href="#">氧漂稳定剂系列</a></li> 
+</ul>
+</div>
+<div class="p_son s_son" id="s1" onmouseover="setturns3(1)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">施胶剂 </a></li>
+<li><a href="#">氧漂稳定剂系列</a></li> 
+<li><a href="#">蒸煮助剂</a></li> 
+<li><a href="#">脱墨剂</a></li> 
+<li><a href="#">消泡剂</a></li> 
+<li><a href="#">施胶剂 </a></li>
+<li><a href="#">氧漂稳定剂系列</a></li> 
+</ul>
+</div>
+<div class="p_son s_son" id="s2" onmouseover="setturns3(2)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">施胶剂 </a></li>
+<li><a href="#">氧漂稳定剂系列</a></li> 
+<li><a href="#">蒸煮助剂</a></li> 
+<li><a href="#">脱墨剂</a></li> 
+<li><a href="#">消泡剂</a></li> 
+<li><a href="#">施胶剂 </a></li>
+<li><a href="#">氧漂稳定剂系列</a></li> 
+</ul>
+</div>
+<div class="p_son s_son" id="s3" onmouseover="setturns3(3)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">施胶剂 </a></li>
+<li><a href="#">氧漂稳定剂系列氧列氧漂稳定剂系列</a></li> 
+<li><a href="#">蒸煮助剂</a></li> 
+<li><a href="#">脱墨剂</a></li> 
+<li><a href="#">消泡剂</a></li> 
+<li><a href="#">施胶剂 </a></li>
+<li><a href="#">氧漂稳定剂系列</a></li> 
+</ul>
+</div>
+<div class="p_son s_son" id="s4" onmouseover="setturns3(4)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">施胶剂 </a></li>
+<li><a href="#">氧漂稳定剂系列</a></li> 
+<li><a href="#">蒸煮助剂</a></li> 
+<li><a href="#">脱墨剂</a></li> 
+<li><a href="#">消泡剂</a></li> 
+<li><a href="#">施胶剂 </a></li>
+<li><a href="#">氧漂稳定剂系列</a></li> 
+</ul>
+</div>
+<div class="p_son s_son" id="s5" onmouseover="setturns3(5)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">施胶剂 </a></li>
+<li><a href="#">氧漂稳定剂系列</a></li> 
+<li><a href="#">蒸煮助剂</a></li> 
+<li><a href="#">脱墨剂</a></li> 
+<li><a href="#">消泡剂</a></li> 
+<li><a href="#">施胶剂 </a></li>
+<li><a href="#">氧漂稳定剂系列</a></li> 
+</ul>
+</div>
+<div class="p_son s_son" id="w1" onmouseover="setturns5(1)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">45345</a></li>
+<li><a href="#">45345</a></li> 
+<li><a href="#">453453</a></li> 
+<li><a href="#">453</a></li>
+</ul>
+</div>
+<div class="p_son s_son" id="w2" onmouseover="setturns5(2)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">45345</a></li>
+<li><a href="#">45345</a></li> 
+<li><a href="#">453453</a></li> 
+<li><a href="#">453</a></li>
+</ul>
+</div>
+<div class="p_son s_son" id="w3" onmouseover="setturns5(3)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">45345</a></li>
+<li><a href="#">45345</a></li> 
+<li><a href="#">453453</a></li> 
+<li><a href="#">453</a></li>
+</ul>
+</div>
+<div class="p_son s_son" id="w4" onmouseover="setturns5(4)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">45345</a></li>
+<li><a href="#">45345</a></li> 
+<li><a href="#">453453</a></li> 
+<li><a href="#">453</a></li>
+</ul>
+</div>
+<div class="p_son s_son" id="w5" onmouseover="setturns5(5)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">45345</a></li>
+<li><a href="#">45345</a></li> 
+<li><a href="#">453453</a></li> 
+<li><a href="#">453</a></li>
+</ul>
+</div>
+<div class="p_son s_son" id="w6" onmouseover="setturns5(6)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">45345</a></li>
+<li><a href="#">45345</a></li> 
+<li><a href="#">453453</a></li> 
+<li><a href="#">453</a></li>
+</ul>
+</div>
+<div class="p_son s_son" id="w7" onmouseover="setturns5(7)" onmouseout="setturnsout(1)">
+<ul>
+<li><a href="#">45345</a></li>
+<li><a href="#">45345</a></li> 
+<li><a href="#">453453</a></li> 
+<li><a href="#">453</a></li>
+</ul>
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</body>
+</html>

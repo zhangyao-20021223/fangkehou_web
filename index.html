@@ -10,17 +10,25 @@
 
 <body>
   <div class="overall">
+
+    <div class="title">
       <div class="title_1" id="title_1">
         <div class="logo">
-          <img src="logo/cat_foot.jpg" alt="#"/>
+        <img src="logo/cat_foot.jpg" alt="#" />
         </div>
         <button type="button" id="title_button" onclick="chick_button">
-          chick
+                chick
         </button>
         <script type="text/javascript" charset="utf-8">
+        var button1 = document.getElementById('title_button')[0];
+        button1.onclick = function () {
+        console.log("事件1");
+        }
+        button1.onclick = function () {
+        console.log("事件2");
+        }
         </script>
       </div>
-    <div class="title">
       <div class="title_3">
         
       </div>
