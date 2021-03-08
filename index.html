@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  
   <div class="overall">
 
     <div class="title">
@@ -20,33 +21,30 @@
                 chick
         </button>
         <script type="text/javascript" charset="utf-8">
-        function widthFunction(){
-          var title_3 = "open_title_3";
-          window.alert(title_3);
-          if (title_3 = "open_title_3");
+		  var title_3 = "0";
+          function widthFunction(){        
+          if (title_3 < 1)
           {
-            document.getElementById("title_3").style.width='0px';
-            title_3 = "false_title_3";
-            window.alert(title_3);
+            document.getElementById("title_3").style.height='0px';
+            title_3 = "1";
           }
-          else
-          {
-            document.getElementById("title_3").style.width='200px';
-            title_3 = "open_title_3";
-            window.alert(title_3); 
-          }
+		  else
+		  {
+		    document.getElementById("title_3").style.height="200px";
+			title_3 = "0";
+		  }
         }
         </script>
-      </div>
+      </div>                      
       <div class="title_3" id="title_3">
         
-      </div>
+      </div>                                               
       <div class="title_2">
         
       </div>
     </div>
     
-    <p class="content">
+    <p class="content">                              
       
     </p>
     
