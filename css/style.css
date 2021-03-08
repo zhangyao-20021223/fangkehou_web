@@ -60,7 +60,7 @@
 	margin-right: 10px;
 }
 #title_button:hover { /* 鼠标移入按钮范围时改变颜色 */
-	background: #5599FF;
+	background: rgba(255,248,220 ,1);
 }
 .title_3{
   width: 100%;
