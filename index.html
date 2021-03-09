@@ -2,22 +2,20 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>放课后的下午茶时间</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>放课后的下午茶时间</title>
 </head>
 
 <body>
-  
   <div class="overall">
-
     <div class="title">
-      <div class="title_1" id="title_1">
+      <div class="title_1" id="Title1">
         <div class="logo">
-        <img src="logo/cat_foot.jpg" alt="#" />
+          <img src="logo/cat_foot.jpg" alt="#" />
         </div>
-        <button type="button" id="title_button" onclick="widthFunction()">chick</button>
+        <button type="button" id="title_button" onclick="TitleHeightButton()">chick</button>
         <!-- <button style="width: 100px;height: 100px; margin-top: 100px;" type="button" onclick="testbutton">点我</button> -->
         <!-- <script type="text/javascript" charset="utf-8">
         function testbutton(){
@@ -44,31 +42,17 @@
             }
           }
         </script> -->
-      
         <script type="text/javascript" charset="utf-8">
-        function widthFunction(){
-        var widthFunction = document.getElementById("title_1");
-        widthFunction.style.height = "200xp"
-        var title_width_1 = widthFunction.style.width;
-        window.alert(title_width_1);
-        title_width_1 = Number(String(title_width_1));
-        window.alert(title_width_1);
-        //widthFunction.style.height = "200px";
-        //while (){
-        //  var x;
-        //  x++;
-        //  window.alert(x);
-        //}
-        }
+          function TitleHeightButton() {
+            var x = document.getElementById('Title1').style.height;
+            document.getElementById("content").innerHTML = x;
+          };
         </script>
-      </div>                      
+      </div>
       <div class="title_2"></div>
     </div>
-    
-    <p class="content"></p>
-    
+    <p class="content" id="content"></p>
   </div>
-  
 </body>
 
 </html>
