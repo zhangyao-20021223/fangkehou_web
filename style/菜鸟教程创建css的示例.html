@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head> 
+<body>
+
+<p>点击按钮创建一个 STYLE 元素，并把它放置在头部区域。</p>
+<button onclick="myFunction()">尝试一下</button>
+<p>被创建的 style 元素包含了改变文档 font 属性的 css 声明。</p>
+<script>
+function myFunction(){
+	var x = document.createElement("STYLE");
+	var t = document.createTextNode("body {font:250px 微软雅黑;}");
+	x.appendChild(t);
+	document.head.appendChild(x);
+};
+</script>
+
+</body>
+</html>
