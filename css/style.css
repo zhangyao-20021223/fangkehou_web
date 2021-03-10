@@ -70,3 +70,8 @@
   position: absolute;
   display: block;
 }
+.content{
+  width: 100%;
+  height: auto;
+  font-size: 25px;
+}
